@@ -19,8 +19,8 @@ export default function Landing() {
         },
         {
             icon: <Brain className="h-6 w-6 text-teal-600" />,
-            title: "MedGemma AI",
-            description: "Powered by Google's MedGemma-4B to perform true multimodal reasoning, synthesizing visual patterns with clinical patient data."
+            title: "PathoAssist AI Bot",
+            description: "Your expert AI partner. Chat naturally with your slide data, ask questions, and get evidence-backed answers powered by MedGemma-4B."
         },
         {
             icon: <FileText className="h-6 w-6 text-teal-600" />,
@@ -47,7 +47,7 @@ export default function Landing() {
                                     v1.0 Now Available with Remote Inference
                                 </div>
                                 <h1 className="mt-6 text-5xl font-extrabold tracking-tight text-slate-900 sm:text-6xl">
-                                    AI-Powered Assistant for <span className="text-teal-600">Modern Pathology</span>
+                                    AI-Powered <span className="text-teal-600">PathoAssist Bot</span>
                                 </h1>
                                 <p className="mt-6 text-lg text-slate-600 leading-relaxed">
                                     PathoAssist combines advanced Whole Slide Imaging (WSI) with <strong>multimodal reasoning</strong> to synthesize visual evidence with patient history, offering deep, context-aware diagnostic support.
