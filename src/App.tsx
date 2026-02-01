@@ -4,7 +4,7 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { CaseProvider } from "@/contexts/CaseContext";
+// import { CaseProvider } from "@/contexts/CaseContext";
 import Landing from "./pages/website/Landing";
 import Features from "./pages/website/Features";
 import Docs from "./pages/website/Docs";
@@ -16,8 +16,8 @@ import SafetyCompliance from "./pages/website/SafetyCompliance";
 import NotFound from "./pages/NotFound";
 import { Loader2 } from "lucide-react";
 
-// Lazy load the main application to keep the website bundle lightweight
-const Index = lazy(() => import("./pages/Index"));
+// Main app is excluded from website-only build
+// const Index = lazy(() => import("./pages/Index"));
 
 const queryClient = new QueryClient();
 
@@ -32,38 +32,32 @@ const LoadingFallback = () => (
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
-    <CaseProvider>
-      <TooltipProvider>
-        <Toaster />
-        <Sonner />
-        <BrowserRouter>
-          <Routes>
-            {/* Website Routes */}
-            <Route path="/" element={<Landing />} />
-            <Route path="/features" element={<Features />} />
-            <Route path="/docs" element={<Docs />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/impact" element={<Impact />} />
-            <Route path="/tech-stack" element={<TechStack />} />
-            <Route path="/wsi-processing" element={<WSIProcessing />} />
-            <Route path="/safety" element={<SafetyCompliance />} />
+    {/* <CaseProvider> */}
+    <TooltipProvider>
+      <Toaster />
+      <Sonner />
+      <BrowserRouter>
+        <Routes>
+          {/* Website Routes */}
+          <Route path="/" element={<Landing />} />
+          <Route path="/features" element={<Features />} />
+          <Route path="/docs" element={<Docs />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/impact" element={<Impact />} />
+          <Route path="/tech-stack" element={<TechStack />} />
+          <Route path="/wsi-processing" element={<WSIProcessing />} />
+          <Route path="/safety" element={<SafetyCompliance />} />
 
-            {/* Application Routes - Lazy Loaded */}
-            <Route
-              path="/app"
-              element={
-                <Suspense fallback={<LoadingFallback />}>
-                  <Index />
-                </Suspense>
-              }
-            />
+          {/* Application Routes - Lazy Loaded */}
+          {/* Application Routes - Redirect or Placeholder */}
+          {/* <Route path="/app" element={<Suspense fallback={<LoadingFallback />}><Index /></Suspense>} /> */}
 
-            {/* Catch-all */}
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </BrowserRouter>
-      </TooltipProvider>
-    </CaseProvider>
+          {/* Catch-all */}
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </BrowserRouter>
+    </TooltipProvider>
+    {/* </CaseProvider> */}
   </QueryClientProvider>
 );
 
