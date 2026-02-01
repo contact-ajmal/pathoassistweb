@@ -13,6 +13,7 @@ import Impact from "./pages/website/Impact";
 import TechStack from "./pages/website/TechStack";
 import WSIProcessing from "./pages/website/WSIProcessing";
 import SafetyCompliance from "./pages/website/SafetyCompliance";
+import Whitepaper from "./pages/website/Whitepaper";
 import NotFound from "./pages/NotFound";
 import { Loader2 } from "lucide-react";
 
@@ -47,10 +48,17 @@ const App = () => (
           <Route path="/tech-stack" element={<TechStack />} />
           <Route path="/wsi-processing" element={<WSIProcessing />} />
           <Route path="/safety" element={<SafetyCompliance />} />
+          <Route path="/whitepaper" element={<Whitepaper />} />
 
           {/* Application Routes - Lazy Loaded */}
-          {/* Application Routes - Redirect or Placeholder */}
-          {/* <Route path="/app" element={<Suspense fallback={<LoadingFallback />}><Index /></Suspense>} /> */}
+          {/* <Route
+              path="/app"
+              element={
+                <Suspense fallback={<LoadingFallback />}>
+                  <Index />
+                </Suspense>
+              }
+            /> */}
 
           {/* Catch-all */}
           <Route path="*" element={<NotFound />} />
