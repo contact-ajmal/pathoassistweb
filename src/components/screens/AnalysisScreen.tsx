@@ -439,7 +439,7 @@ export function AnalysisScreen({ onProceed }: AnalysisScreenProps) {
           {/* Model Info */}
           <div className="p-4 border-t text-xs text-muted-foreground">
             <p>
-              <span className="font-medium">Model:</span> MedGemma
+              <span className="font-medium">Model:</span> Google MedGemma
             </p>
             <p className="mt-1">
               <span className="font-medium">Case:</span>{' '}

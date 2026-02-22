@@ -12,7 +12,7 @@ export default function About() {
                         Our mission is to democratize access to advanced diagnostic tools by bringing state-of-the-art AI directly to the edge.
                     </p>
                     <p className="text-lg text-slate-600 leading-relaxed">
-                        By optimizing the <strong>MedGemma-4B</strong> model for local consumer hardware, we empower clinics in rural and resource-constrained
+                        By optimizing the <strong>Google MedGemma-4B</strong> model for local consumer hardware, we empower clinics in rural and resource-constrained
                         areas to perform high-quality pathology analysis without relying on expensive cloud infrastructure or consistent internet connectivity.
                     </p>
                 </div>
@@ -30,7 +30,7 @@ export default function About() {
                             <Code className="h-8 w-8 text-blue-600" />
                         </div>
                         <h3 className="text-xl font-bold mb-3">Privacy Focused</h3>
-                        <p className="text-slate-600">Built on secure, local-first architecture (MedGemma, PyTorch) ensuring patient data stays within your infrastructure.</p>
+                        <p className="text-slate-600">Built on secure, local-first architecture (Google MedGemma, PyTorch) ensuring patient data stays within your infrastructure.</p>
                     </div>
                     <div className="text-center">
                         <div className="bg-rose-100 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6">

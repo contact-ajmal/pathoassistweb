@@ -20,8 +20,8 @@ export default function Landing() {
         },
         {
             icon: <Brain className="h-6 w-6 text-teal-600" />,
-            title: "MedGemma AI",
-            description: "Powered by Google's MedGemma-4B to perform true multimodal reasoning, synthesizing visual patterns with clinical patient data."
+            title: "Google MedGemma AI",
+            description: "Powered by Google's Google MedGemma-4B to perform true multimodal reasoning, synthesizing visual patterns with clinical patient data."
         },
         {
             icon: <FileText className="h-6 w-6 text-teal-600" />,
@@ -218,7 +218,7 @@ export default function Landing() {
                         <h2 className="text-3xl font-bold mb-6 sm:text-4xl text-white">The HAI-DEF Advantage</h2>
                         <p className="text-lg text-teal-100 leading-relaxed">
                             Standard AI models only see pixels. <strong className="text-white">PathoAssist sees the whole patient.</strong> <br />
-                            By leveraging the <span className="text-teal-300">MedGemma-4B HAI-DEF model</span>, we move beyond simple classification to true cognitive reasoning.
+                            By leveraging the <span className="text-teal-300">Google MedGemma-4B HAI-DEF model</span>, we move beyond simple classification to true cognitive reasoning.
                         </p>
                     </div>
 
@@ -317,7 +317,7 @@ export default function Landing() {
                             </div>
                             <h2 className="text-3xl font-bold text-slate-900 mb-6">Context-Aware AI Analysis</h2>
                             <p className="text-lg text-slate-600 mb-8 leading-relaxed">
-                                MedGemma processes the selected patches using true multimodal reasoning. It doesn't just look at cells—it synthesizes visual evidence with the patient's clinical history to provide a comprehensive, transparent analysis.
+                                Google MedGemma processes the selected patches using true multimodal reasoning. It doesn't just look at cells—it synthesizes visual evidence with the patient's clinical history to provide a comprehensive, transparent analysis.
                             </p>
                             <ul className="space-y-4">
                                 {['Extraction of cellular and morphological features', 'Integration with patient clinical context', 'Transparent progress and confidence scoring'].map((item) => (
